@@ -11,4 +11,4 @@ It is an user-friendly GUI application developed with Java Swing, designed to te
 * **Quiz:** Generates a set of problems for users to solve and tracks their scores to assess their understanding
 
 ### Project Demo:
-https://drive.google.com/drive/folders/1tdBv0udFLFLJsNdSLh1N_rjLHjJAQpeH
+https://drive.google.com/file/d/16jPUWTPPnlpN8OpQz-QHj1w7zGiwtFcJ/view?usp=sharing
