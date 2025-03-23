@@ -21,10 +21,9 @@ public class Simulation extends JPanel implements ActionListener {
     private int y; // Current y-coordinate of the box
     private static double velocity = 5; // Current velocity of the box
     private Timer timer;
-    private boolean tipShown;
     // Set all the components I need
     JButton button;
-    JFrame frame = new JFrame("CJ Physics Tutorial - Simulation");
+    JFrame frame = new JFrame("CJ Friction Tutorial - Simulation");
     JButton menuButton = new JButton("Menu");
     JSlider velocityField;
     JSlider frictionField;
@@ -354,7 +353,7 @@ public class Simulation extends JPanel implements ActionListener {
         ACCELERATION = velocityField.getValue();
         MASS = massField.getValue();
         Coefficientoffriction = frictionField.getValue() / 100.0;
-        System.out.println(Coefficientoffriction);
+        //System.out.println(Coefficientoffriction);
         FRICTION = Coefficientoffriction * MASS * 9.8;
         Fa = forceField.getValue() / 10.0;
         Fnet = Fa - FRICTION;

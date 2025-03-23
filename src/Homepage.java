@@ -7,7 +7,7 @@ import java.awt.event.MouseListener;
 
 public class Homepage implements ActionListener {
     // Create frame and title
-    JFrame frame = new JFrame("CJ Physics Tutorial - Homepage");
+    JFrame frame = new JFrame("CJ Friction Tutorial - Homepage");
     JLabel title = new JLabel();
 
     // Create homepage buttons (links to other pages)

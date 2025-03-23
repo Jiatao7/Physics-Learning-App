@@ -8,7 +8,7 @@ import java.io.*;
 
 public class Material implements ActionListener {
         // Creates components
-        JFrame frame = new JFrame("CJ Physics Tutorial - Material");
+        JFrame frame = new JFrame("CJ Friction Tutorial - Material");
         // bigBox is the panel that holds all the other small boxes
         JPanel bigBox = new JPanel(new FlowLayout(FlowLayout.CENTER, 160, 40));
         // box1, box2, and box3 hold information on static friction, kinetic friction,
@@ -113,7 +113,7 @@ public class Material implements ActionListener {
 
                 }
 
-                System.out.println(text1);
+                //System.out.println(text1);
 
                 // Sets text for box1
                 box1Header.setText("<html><body style='width: 200px'>Static Friction (Fs)</body></html>");

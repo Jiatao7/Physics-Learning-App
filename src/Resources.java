@@ -7,7 +7,7 @@ import java.awt.event.MouseListener;
 
 public class Resources implements ActionListener {
     // Create frame and title
-    JFrame frame = new JFrame("CJ Physics Tutorial - Resources");
+    JFrame frame = new JFrame("CJ Friction Tutorial - Resources");
     JLabel title = new JLabel();
 
     // Create resources buttons (links to other pages)

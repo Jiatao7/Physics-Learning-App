@@ -29,7 +29,7 @@ public class Samples implements ActionListener {
     // goes up to 5)
     int problemNumber = 1;
 
-    JFrame frame = new JFrame("CJ Physics Tutorial - Samples");
+    JFrame frame = new JFrame("CJ Friction Tutorial - Samples");
     JPanel megaPanel = new JPanel(); // large panel that holds the other panels
     JPanel panel = new JPanel(); // title panel (displays title)
     JPanel panel2 = new JPanel(); // problem panel (displays problem)

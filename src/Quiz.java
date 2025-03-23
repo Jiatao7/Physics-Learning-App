@@ -11,7 +11,7 @@ public class Quiz extends JFrame implements ActionListener {
     Random rand = new Random();
 
     // Create all components
-    JFrame frame = new JFrame();
+    JFrame frame = new JFrame("CJ Friction Tutorial - Quiz");
     JButton menuButton = new JButton("Menu");
     private JPanel quizPanel;
     private JLabel questionNumberLabel;
