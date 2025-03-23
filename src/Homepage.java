@@ -7,7 +7,7 @@ import java.awt.event.MouseListener;
 
 public class Homepage implements ActionListener {
     // Create frame and title
-    JFrame frame = new JFrame("CJ Friction Tutorial - Homepage");
+    JFrame frame = new JFrame("CJ Physics Tutorial - Homepage");
     JLabel title = new JLabel();
 
     // Create homepage buttons (links to other pages)
@@ -21,7 +21,7 @@ public class Homepage implements ActionListener {
 
     Homepage() {
         // Set title
-        title.setText("Welcome to CJ Friction Tutorial");
+        title.setText("Welcome to CJ Physics Tutorial");
         title.setBounds(Main.screenWidth / 2 - 500, Main.screenHeight / 2 - 100, 1000, 100);
         title.setHorizontalAlignment(JLabel.CENTER);
         title.setVerticalAlignment(JLabel.CENTER);
@@ -32,21 +32,21 @@ public class Homepage implements ActionListener {
 
         // Set the buttons (set location, font, background color + add action & mouse
         // listener)
-        resourcesBtn.setBounds(300, 750, 300, 60);
+        resourcesBtn.setBounds(300, Main.screenHeight - 240, 300, 60);
         resourcesBtn.setFont(new Font("Helvetica Neue", Font.PLAIN, 30));
         resourcesBtn.setFocusable(false);
         resourcesBtn.setBackground(buttonColor);
         resourcesBtn.addActionListener((ActionListener) this);
         resourcesBtn.addMouseListener(mouseHover());
 
-        practiceBtn.setBounds(Main.screenWidth / 2 - 150, 750, 300, 60);
+        practiceBtn.setBounds(Main.screenWidth / 2 - 150, Main.screenHeight - 240, 300, 60);
         practiceBtn.setFont(new Font("Helvetica Neue", Font.PLAIN, 30));
         practiceBtn.setFocusable(false);
         practiceBtn.setBackground(buttonColor);
         practiceBtn.addActionListener((ActionListener) this);
         practiceBtn.addMouseListener(mouseHover());
 
-        quizBtn.setBounds(Main.screenWidth - 600, 750, 300, 60);
+        quizBtn.setBounds(Main.screenWidth - 600, Main.screenHeight - 240, 300, 60);
         quizBtn.setFont(new Font("Helvetica Neue", Font.PLAIN, 30));
         quizBtn.setFocusable(false);
         quizBtn.setBackground(buttonColor);

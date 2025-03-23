@@ -7,7 +7,7 @@ import java.awt.event.MouseListener;
 
 public class Resources implements ActionListener {
     // Create frame and title
-    JFrame frame = new JFrame("CJ Friction Tutorial - Resources");
+    JFrame frame = new JFrame("CJ Physics Tutorial - Resources");
     JLabel title = new JLabel();
 
     // Create resources buttons (links to other pages)
@@ -35,21 +35,21 @@ public class Resources implements ActionListener {
 
         // Set the buttons (set location, font, background color + add action & mouse
         // listener)
-        materialBtn.setBounds(300, 750, 300, 60);
+        materialBtn.setBounds(300, Main.screenHeight - 240, 300, 60);
         materialBtn.setFont(new Font("Helvetica Neue", Font.PLAIN, 30));
         materialBtn.setFocusable(false);
         materialBtn.setBackground(buttonColor);
         materialBtn.addActionListener((ActionListener) this);
         materialBtn.addMouseListener(mouseHover());
 
-        samplesBtn.setBounds(Main.screenWidth / 2 - 150, 750, 300, 60);
+        samplesBtn.setBounds(Main.screenWidth / 2 - 150, Main.screenHeight - 240, 300, 60);
         samplesBtn.setFont(new Font("Helvetica Neue", Font.PLAIN, 30));
         samplesBtn.setFocusable(false);
         samplesBtn.setBackground(buttonColor);
         samplesBtn.addActionListener((ActionListener) this);
         samplesBtn.addMouseListener(mouseHover());
 
-        simulationBtn.setBounds(Main.screenWidth - 600, 750, 300, 60);
+        simulationBtn.setBounds(Main.screenWidth - 600, Main.screenHeight - 240, 300, 60);
         simulationBtn.setFont(new Font("Helvetica Neue", Font.PLAIN, 30));
         simulationBtn.setFocusable(false);
         simulationBtn.setBackground(buttonColor);

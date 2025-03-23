@@ -113,10 +113,6 @@ public class Material implements ActionListener {
 
                 }
 
-                System.out.println(text1);
-                System.out.println(text2);
-                System.out.println(text3);
-
                 // Sets text for box1
                 box1Header.setText("<html><body style='width: 200px'>Static Friction (Fs)</body></html>");
                 box1Header.setForeground(Main.color2);

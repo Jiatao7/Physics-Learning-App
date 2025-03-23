@@ -11,7 +11,7 @@ public class Quiz extends JFrame implements ActionListener {
     Random rand = new Random();
 
     // Create all components
-    JFrame frame = new JFrame("CJ Friction Tutorial - Quiz");
+    JFrame frame = new JFrame("CJ Physics Tutorial - Quiz");
     JButton menuButton = new JButton("Menu");
     private JPanel quizPanel;
     private JLabel questionNumberLabel;
@@ -31,7 +31,7 @@ public class Quiz extends JFrame implements ActionListener {
     public Quiz() {
         // Clear text file
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter("answers.txt"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter("bin/answers.txt"));
             writer.write("");
             writer.close();
         } catch (Exception e) {
@@ -242,7 +242,7 @@ public class Quiz extends JFrame implements ActionListener {
         questionTextArea.setText(questionList[currentQuestionIndex].getProblem());
         answerTextField.setText("");
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("answers.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("bin/answers.txt"));
             for (int i = 0; i < currentQuestionIndex; i++) {
                 reader.readLine();
             }
@@ -280,7 +280,7 @@ public class Quiz extends JFrame implements ActionListener {
                 currentQuestionIndex++;
 
                 try {
-                    BufferedWriter writer = new BufferedWriter(new FileWriter("answers.txt", true));
+                    BufferedWriter writer = new BufferedWriter(new FileWriter("bin/answers.txt", true));
                     writer.write(currentQuestionIndex == 1 ? boxText : "\n" + boxText);
                     writer.close();
                 } catch (Exception e) {
@@ -303,7 +303,7 @@ public class Quiz extends JFrame implements ActionListener {
                 answerTextField.setText("");
                 currentQuestionIndex++;
                 try {
-                    BufferedWriter writer = new BufferedWriter(new FileWriter("answers.txt", true));
+                    BufferedWriter writer = new BufferedWriter(new FileWriter("bin/answers.txt", true));
                     writer.write(currentQuestionIndex == 1 ? boxText : "\n" + boxText);
                     writer.close();
                 } catch (Exception e) {

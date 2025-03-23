@@ -11,7 +11,7 @@ public class Practice implements ActionListener {
     RandomProblem newProblem; // the current problem
 
     // Creates frame
-    JFrame frame = new JFrame("CJ Friction Tutorial - Practice");
+    JFrame frame = new JFrame("CJ Physics Tutorial - Practice");
 
     // Creates panels
     JPanel megaPanel = new JPanel();

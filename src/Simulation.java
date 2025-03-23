@@ -23,7 +23,7 @@ public class Simulation extends JPanel implements ActionListener {
     private Timer timer;
     // Set all the components I need
     JButton button;
-    JFrame frame = new JFrame("CJ Friction Tutorial - Simulation");
+    JFrame frame = new JFrame("CJ Physics Tutorial - Simulation");
     JButton menuButton = new JButton("Menu");
     JSlider velocityField;
     JSlider frictionField;
@@ -353,7 +353,6 @@ public class Simulation extends JPanel implements ActionListener {
         ACCELERATION = velocityField.getValue();
         MASS = massField.getValue();
         Coefficientoffriction = frictionField.getValue() / 100.0;
-        //System.out.println(Coefficientoffriction);
         FRICTION = Coefficientoffriction * MASS * 9.8;
         Fa = forceField.getValue() / 10.0;
         Fnet = Fa - FRICTION;
