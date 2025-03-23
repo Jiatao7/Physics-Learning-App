@@ -8,7 +8,7 @@ import java.io.*;
 
 public class Material implements ActionListener {
         // Creates components
-        JFrame frame = new JFrame("CJ Friction Tutorial - Material");
+        JFrame frame = new JFrame("CJ Physics Tutorial - Material");
         // bigBox is the panel that holds all the other small boxes
         JPanel bigBox = new JPanel(new FlowLayout(FlowLayout.CENTER, 160, 40));
         // box1, box2, and box3 hold information on static friction, kinetic friction,
@@ -95,7 +95,7 @@ public class Material implements ActionListener {
                 String text3 = "<html><body style='width: 450px'><ul>";
 
                 try {
-                        BufferedReader reader = new BufferedReader(new FileReader("material.txt"));
+                        BufferedReader reader = new BufferedReader(new FileReader("resources/text/material.txt"));
                         for (int i = 0; i < 6; i++) {
                                 text1 = text1 + "<li style='padding-left: 20px'>" + reader.readLine() + "</li>";
                         }
@@ -113,7 +113,9 @@ public class Material implements ActionListener {
 
                 }
 
-                //System.out.println(text1);
+                System.out.println(text1);
+                System.out.println(text2);
+                System.out.println(text3);
 
                 // Sets text for box1
                 box1Header.setText("<html><body style='width: 200px'>Static Friction (Fs)</body></html>");
@@ -167,19 +169,19 @@ public class Material implements ActionListener {
                 box3.add(box3Text, BorderLayout.CENTER);
 
                 // Sets image for boxD1
-                ImageIcon imageIcon1 = new ImageIcon("Static_Friction.png");
+                ImageIcon imageIcon1 = new ImageIcon("resources/images/Static_Friction.png");
                 Image image1 = imageIcon1.getImage().getScaledInstance(520, 230, Image.SCALE_SMOOTH);
                 box1Diagram.setIcon(new ImageIcon(image1));
                 boxD1.add(box1Diagram);
 
                 // Sets image for boxD2
-                ImageIcon imageIcon2 = new ImageIcon("Kinetic_Friction.png");
+                ImageIcon imageIcon2 = new ImageIcon("resources/images/Kinetic_Friction.png");
                 Image image2 = imageIcon2.getImage().getScaledInstance(520, 230, Image.SCALE_SMOOTH);
                 box2Diagram.setIcon(new ImageIcon(image2));
                 boxD2.add(box2Diagram);
 
                 // Sets image for boxD3
-                ImageIcon imageIcon3 = new ImageIcon("Coefficient_of_friction.png");
+                ImageIcon imageIcon3 = new ImageIcon("resources/images/Coefficient_of_friction.png");
                 Image image3 = imageIcon3.getImage().getScaledInstance(520, 230, Image.SCALE_SMOOTH);
                 box3Diagram.setIcon(new ImageIcon(image3));
                 boxD3.add(box3Diagram);
